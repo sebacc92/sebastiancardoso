@@ -5,8 +5,12 @@ export default component$(() => {
   return (
     <div>
       <h1>Mis proyects</h1>
-      <p>hola</p>
-      <p>mundo</p>
+      <div>
+        <div class="card">
+          <h2>MyShop4</h2>
+          <img src="/images/myshop4.png" width="350" />
+        </div>
+      </div>
     </div>
   );
 });

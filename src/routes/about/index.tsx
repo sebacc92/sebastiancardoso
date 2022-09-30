@@ -1,6 +1,7 @@
 import { component$, useRef, useStylesScoped$ } from '@builder.io/qwik';
 import styles from './about.css?inline';
 import type { DocumentHead } from '@builder.io/qwik-city';
+import { Play } from '~/components/icons/play';
 
 export default component$(() => {
   useStylesScoped$(styles);
@@ -19,11 +20,12 @@ export default component$(() => {
               aria-label="How to pronounce my name"
               onClick$={() => audioRef.current.play()}
             >
-              <i>▶️</i>
+              <img src="/images/play.png" width="30" />
             </button>
             <audio ref={audioRef} src="/audio/presentation.mp3"></audio>
             Empece como estudiante de Informatica en la Universidad Nacional de La Plata en el 2010.</p>
-          <p>Actualmente soy desarrollador frontend con React en Arzion. Naci en Montevideo, Uruguay pero estoy viviendo en Buenos Aires, Argentina.</p>
+            Naci en Montevideo, Uruguay pero estoy viviendo en Buenos Aires, Argentina. 
+          <p>Actualmente soy desarrollador frontend con React en Arzion. </p>
           <p>Yo amo el dark mode, open source y los proyectos paralelos. Cuando no estoy desarrollando estoy leyendo o mirando peliculas</p>
           <p>Yo estoy realmente feliz de vivir en esta era digital de cambios tecnológicos. Mi propósito es desarrollar software que cambie las vidas las personas para mejor.</p>
         </div>
