@@ -1,10 +1,7 @@
 header {
-  background: #edf1f8;
+  background: transparent;
   display: flex;
   justify-content: flex-end;
-  min-height: 50px;
-  position: fixed;
-  top: 0;
   width: 100%;
   z-index: 40;
 }

@@ -7,8 +7,8 @@ import { Github } from '~/components/icons/github';
 
 export default component$(() => {
   return (
-    <div class="wrapper">
-      <div class="container">
+    <div class="wrapper2">
+      <div class="container2">
         <div class="section-1">
           <div class="avatar">
             <img src="/images/yo.jpg" alt="Foto de sebastian" />

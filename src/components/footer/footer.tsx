@@ -7,7 +7,7 @@ export default component$(() => {
 
   return (
     <footer>
-      Made with ♡
+      Made with ❤️ &
       <QwikLogo />
     </footer>
   );

@@ -11,19 +11,14 @@ export default component$(() => {
       <nav>
         <ul>
           <li>
-          <Link class="mindblow" href="/projects">
-            Projects
-          </Link>
+            <Link class="mindblow" href="/projects">
+              Projects
+            </Link>
           </li>
           <li>
-          <Link class="mindblow" href="/about">
-            About
-          </Link>
-          </li>
-          <li>
-            <a href="https://cv.sebastiancardoso.com" target="_blank">
-              cv
-            </a>
+            <Link class="mindblow" href="/about">
+              About
+            </Link>
           </li>
         </ul>
       </nav>
