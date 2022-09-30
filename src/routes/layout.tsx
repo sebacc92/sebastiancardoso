@@ -1,20 +1,17 @@
 import { component$, Slot } from '@builder.io/qwik';
 import Header from '../components/header/header';
-import { QwikLogo } from '~/components/icons/qwik';
+import Footer from '~/components/footer/footer';
 
 export default component$(() => {
   return (
-    <>
+    <div class="page-container">
       <Header />
       <main>
         <section>
           <Slot />
         </section>
       </main>
-      <footer>
-        Made with ♡
-        <QwikLogo />
-      </footer>
-    </>
+      <Footer />
+    </div>
   );
 });

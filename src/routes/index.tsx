@@ -11,7 +11,7 @@ export default component$(() => {
       <div class="container">
         <div class="section-1">
           <div class="avatar">
-            <img src="https://sebastiancardoso.com/assets/static/avatar.d042d20.a929282.jpg" alt="Foto de sebastian" />
+            <img src="/images/yo.jpg" alt="Foto de sebastian" />
           </div>
           <div class="text">
             <div class="name">

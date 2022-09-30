@@ -16,8 +16,16 @@
 body {
   background-color: #edf1f8;
   font-family: 'Poppins', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
+  height: 100vh;
+}
+
+.page-container {
+  position: relative;
+  min-height: 100vh;
 }
 
 .wrapper {

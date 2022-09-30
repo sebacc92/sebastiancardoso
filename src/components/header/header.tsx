@@ -11,6 +11,11 @@ export default component$(() => {
       <nav>
         <ul>
           <li>
+          <Link class="mindblow" href="/projects">
+            Projects
+          </Link>
+          </li>
+          <li>
           <Link class="mindblow" href="/about">
             About
           </Link>
