@@ -1,11 +1,10 @@
 import { component$, useRef, useStylesScoped$ } from '@builder.io/qwik';
 import styles from './about.css?inline';
 import type { DocumentHead } from '@builder.io/qwik-city';
-import { Play } from '~/components/icons/play';
 
 export default component$(() => {
   useStylesScoped$(styles);
-  const audioRef = useRef()
+  const audioRef = useRef<HTMLVideoElement>()
   return (
     <div>
       <h1>Never stop learning!</h1>
@@ -18,7 +17,11 @@ export default component$(() => {
               class="button-audio-play"
               role="button"
               aria-label="How to pronounce my name"
-              onClick$={() => audioRef.current.play()}
+              onClick$={() => {
+                if(audioRef.current != null){
+                  audioRef.current.play()
+                }
+              }}
             >
               <img src="/images/play.png" width="30" />
             </button>
