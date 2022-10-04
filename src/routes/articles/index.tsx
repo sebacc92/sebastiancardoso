@@ -7,6 +7,9 @@ export default component$(() => {
     return (
         <div>
             <h1>Lista de todos los articulos</h1>
+            <div>
+                En construccion
+            </div>
         </div>
     );
 })

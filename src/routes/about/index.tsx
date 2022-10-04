@@ -7,13 +7,15 @@ export default component$(() => {
   const audioRef = useRef<HTMLVideoElement>()
   return (
     <div>
-      <h1>Never stop learning!</h1>
+      <h1>Planea. Crea. Comparte!</h1>
       <div>
-        <img src="/images/yo.jpg" alt="Foto de Seba" height="125" width="125" />
-        <div>
-          <p>
-            Hola! Me llamo Sebastian Cardoso
-            <button
+        <figure>
+          <img src="/images/yo2.jpg" alt="Foto de Seba" class="photo" />
+        </figure>
+        <div class="container">
+          <p class="nowrap">
+            <span>Hola! Me llamo Sebastian Cardoso</span>
+            <span
               class="button-audio-play"
               role="button"
               aria-label="How to pronounce my name"
@@ -23,14 +25,15 @@ export default component$(() => {
                 }
               }}
             >
-              <img src="/images/play.png" width="30" />
-            </button>
-            <audio ref={audioRef} src="/audio/presentation.mp3"></audio>
-            Empece como estudiante de Informatica en la Universidad Nacional de La Plata en el 2010.</p>
-            Naci en Montevideo, Uruguay pero estoy viviendo en Buenos Aires, Argentina. 
-          <p>Actualmente soy desarrollador frontend con React en Arzion. </p>
-          <p>Yo amo el dark mode, open source y los proyectos paralelos. Cuando no estoy desarrollando estoy leyendo o mirando peliculas</p>
-          <p>Yo estoy realmente feliz de vivir en esta era digital de cambios tecnológicos. Mi propósito es desarrollar software que cambie las vidas las personas para mejor.</p>
+              <img src="/images/play.png" width="25" />
+            </span>
+          </p>
+          <audio ref={audioRef} src="/audio/presentation.mp3"></audio>
+          <p>Naci en Montevideo, Uruguay pero estoy viviendo en Buenos Aires, Argentina.</p>
+          <p>Empece como estudiante de Informatica en la Universidad Nacional de La Plata en el 2010. Luego me interese por el desarrollo Web.</p>
+          <p>Actualmente soy desarrollador frontend con React en <a href="https://arzion.com/">Arzion</a>. </p>
+          <p>Yo estoy realmente feliz de vivir en esta era digital de cambios tecnológicos. La automatización construida con la base del software esta resolviendo muchos problemas de los humanos.</p>
+          <p>Hoy podemos unirnos como Planeta porque tenemos Internet. Mi sueño es que Internet llegue a todas partes del mundo y la gente se pueda unir al inconsciente colectivo por medio de la información y los datos.</p>
         </div>
       </div>
     </div>

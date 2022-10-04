@@ -31,3 +31,27 @@ h1 {
   background-color: none;
   margin-left: 4px;
 }
+
+.photo {
+  border-radius: 16px;
+  float: left;
+  margin-right: 1em;
+  margin-bottom: .5em;
+  width: 40%;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 400px) {
+  figure {
+    display: flex;
+    justify-content: center;
+  }
+  .photo {
+    float: none;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
