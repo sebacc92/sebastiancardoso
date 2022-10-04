@@ -23,9 +23,9 @@ export default component$(() => {
         </div>
         <div class="section-2">
           <div class="links">
-            <div><a target="_blank" href="https://twitter.com/sebacc92"><Twitter /></a></div>
             <div><a target="_blank" href="https://gitlab.com/sebacode"><Gitlab /></a></div>
             <div><a target="_blank" href="https://github.com/sebacc92"><Github /></a></div>
+            <div><a target="_blank" href="https://twitter.com/sebacc92"><Twitter /></a></div>
             <div><a target="_blank" href="https://linkedin.com/in/sebastiancardoso92"><Linkedin /></a></div>
             <div><a target="_blank" href="https://instagram.com/sebacc92"><Instagram /></a></div>
           </div>
