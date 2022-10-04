@@ -6,10 +6,17 @@ export default component$(() => {
     <div>
       <h1>Mis proyects</h1>
       <div>
+        <div>
+          En construccion
+        </div>
+        {/* <div class="card">
+          <h2>Proyecto Unidad Planetaria</h2>
+          <img src="/images/myshop4.png" width="350" />
+        </div>
         <div class="card">
           <h2>MyShop4</h2>
           <img src="/images/myshop4.png" width="350" />
-        </div>
+        </div> */}
       </div>
     </div>
   );

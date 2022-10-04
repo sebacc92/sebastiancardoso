@@ -4,3 +4,10 @@ footer {
   grid-row-start: 2;
   grid-row-end: 3;
 }
+
+.button-mode-switch {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 1.5em;
+}
