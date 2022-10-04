@@ -8,6 +8,11 @@ export default component$(() => {
 
   return (
     <header>
+      <div>
+        <Link class="logo" href="/">
+          <img src="/images/logo.svg" alt="logo" width="40"/>
+        </Link>
+      </div>
       <nav>
         <ul>
           <li>

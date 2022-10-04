@@ -4,6 +4,7 @@ import { Twitter } from '~/components/icons/twitter';
 import { Instagram } from '~/components/icons/instagram';
 import { Linkedin } from '~/components/icons/linkedin';
 import { Github } from '~/components/icons/github';
+import { Gitlab } from '~/components/icons/gitlab';
 
 export default component$(() => {
   return (
@@ -23,6 +24,7 @@ export default component$(() => {
         <div class="section-2">
           <div class="links">
             <div><a target="_blank" href="https://twitter.com/sebacc92"><Twitter /></a></div>
+            <div><a target="_blank" href="https://gitlab.com/sebacode"><Gitlab /></a></div>
             <div><a target="_blank" href="https://github.com/sebacc92"><Github /></a></div>
             <div><a target="_blank" href="https://linkedin.com/in/sebastiancardoso92"><Linkedin /></a></div>
             <div><a target="_blank" href="https://instagram.com/sebacc92"><Instagram /></a></div>

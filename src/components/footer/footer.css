@@ -1,4 +1,6 @@
 footer {
+  display: flex;
+  justify-content: space-between;
   grid-row-start: 2;
   grid-row-end: 3;
 }
