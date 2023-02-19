@@ -24,3 +24,16 @@ header nav ul>:not(:last-child) {
 header div {
   margin-left: 1em;
 }
+
+.hover-effect {
+  color: #000;
+  transition: all .3s ease;
+  font-family: 'Epilogue', sans-serif;
+  font-size: 2em;
+  font-weight: 900;
+}
+
+.hover-effect:hover {
+  font-size: 2.2em;
+  text-shadow: 1px 1px 6px gray;
+}

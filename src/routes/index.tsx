@@ -12,7 +12,7 @@ export default component$(() => {
       <div class="container2">
         <div class="section-1">
           <div class="avatar">
-            <img src="/images/yo.jpg" alt="Foto de sebastian" />
+            <img src="/images/yo4.jpeg" alt="Foto de sebastian" />
           </div>
           <div class="text">
             <div class="name">

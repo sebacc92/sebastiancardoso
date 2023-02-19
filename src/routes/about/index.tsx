@@ -10,7 +10,7 @@ export default component$(() => {
       <h1>Planea. Crea. Comparte!</h1>
       <div>
         <figure>
-          <img src="/images/yo2.jpg" alt="Foto de Seba" class="photo" />
+          <img src="/images/yo3.webp" alt="Foto de Seba" class="photo" />
         </figure>
         <div class="container">
           <p class="nowrap">

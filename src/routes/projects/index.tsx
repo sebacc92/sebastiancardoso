@@ -1,23 +1,23 @@
 import { component$ } from '@builder.io/qwik';
 import type { DocumentHead } from '@builder.io/qwik-city';
 
+
 export default component$(() => {
+  // todo get from back
+  const proyects = [
+    {
+      title: 'Morfi',
+      description: 'Morfi.pro es una herramienta muy útil para restaurantes y casas de comida que quieren ofrecer una experiencia más cómoda y eficiente a sus clientes y mejorar su gestión interna.'
+    }
+  ]
   return (
     <div>
-      <h1>Mis proyects</h1>
-      <div>
+      {proyects.map(proyect => (
         <div>
-          En construccion
+          <h1>{proyect.title}</h1>
+          <p>{proyect.description}</p>
         </div>
-        {/* <div class="card">
-          <h2>Proyecto Unidad Planetaria</h2>
-          <img src="/images/myshop4.png" width="350" />
-        </div>
-        <div class="card">
-          <h2>MyShop4</h2>
-          <img src="/images/myshop4.png" width="350" />
-        </div> */}
-      </div>
+      ))}
     </div>
   );
 });

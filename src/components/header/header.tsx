@@ -1,33 +1,35 @@
 import { component$, useStylesScoped$ } from '@builder.io/qwik';
 import styles from './header.css?inline';
-import { Link } from '@builder.io/qwik-city';
+import { Link, useLocation } from '@builder.io/qwik-city';
 
 
 export default component$(() => {
   useStylesScoped$(styles);
+  const location = useLocation()
+  console.log('location', location)
 
   return (
     <header>
       <div>
-        <Link class="logo" href="/">
-          <img src="/images/logo.svg" alt="logo" width="40"/>
+        <Link href="/">
+          <span class="hover-effect">SC</span>
         </Link>
       </div>
       <nav>
         <ul>
           <li>
-            <Link class="mindblow" href="/projects">
-              Projects
+            <Link class={{ active: location.pathname === '/projects/'}} href="/projects">
+              <span>Projects</span>
             </Link>
           </li>
           <li>
-            <Link class="mindblow" href="/articles">
-              Articles
+            <Link class={{ active: location.pathname === '/articles/'}} href="/articles">
+              <span>Articles</span>
             </Link>
           </li>
           <li>
-            <Link class="mindblow" href="/about">
-              About
+            <Link class={{ active: location.pathname === '/about/'}} href="/about">
+              <span>About</span>
             </Link>
           </li>
         </ul>
