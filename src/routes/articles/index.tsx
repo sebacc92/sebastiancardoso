@@ -1,5 +1,4 @@
 import { component$ } from '@builder.io/qwik';
-import { useLocation } from '@builder.io/qwik-city';
 
 export default component$(() => {
     const articles = [
@@ -8,7 +7,6 @@ export default component$(() => {
             date: '15/02/2023'
         }
     ]
-    const location = useLocation();
 
     return (
         <div>

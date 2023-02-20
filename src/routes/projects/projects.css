@@ -1,0 +1,10 @@
+.project-card {
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 1em;
+    transition: all .4s ease;
+}
+
+.project-card:hover {
+    background-color: #fff;
+}
