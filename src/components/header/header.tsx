@@ -6,7 +6,6 @@ import { Link, useLocation } from '@builder.io/qwik-city';
 export default component$(() => {
   useStylesScoped$(styles);
   const location = useLocation()
-  console.log('location', location)
 
   return (
     <header>

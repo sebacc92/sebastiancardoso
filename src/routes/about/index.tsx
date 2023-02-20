@@ -30,7 +30,7 @@ export default component$(() => {
           </p>
           <audio ref={audioRef} src="/audio/presentation.mp3"></audio>
           <p>Me dedico a programar y me encanta el desarrollo Web. Empecé mi carrera en el 2010 cuando estudié Informática en la UNLP programando con Pascal. Luego experimenté con Php, Python y algo de Java.</p>
-          <p>Hoy en día tengo mayor experiencia con Javascript y con React. Soy un eterno estudiante y creo en el aprendizaje permanente. Me encuentro practicando algo de Python y Qwik.js.</p>
+          <p>Hoy en día tengo mas de 3 años experiencia prgramando con React. Soy un eterno estudiante y creo en el aprendizaje permanente. Actualmente me encuentro practicando Python y Qwik.js.</p>
           <p>En mi tiempo libre, me gusta desconectar de la tecnología y conectarme con la naturaleza. Por eso, me dedico a mi pequeña huerta, donde cultivo mis propias verduras y frutas. Me encanta experimentar con nuevas plantas y técnicas de jardinería para mejorar mi habilidad en este pasatiempo.</p>
         </div>
       </div>
