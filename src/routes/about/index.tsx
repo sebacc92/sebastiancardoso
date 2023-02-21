@@ -48,7 +48,7 @@ export default component$(() => {
         <li><strong>2009</strong>: 👨‍🎓 Termino la secundaria con orientación a EGEOR (Economía y Gestión de las Organizaciones).</li>
         <li><strong>2010</strong>: Empiezo la carrera de Licenciatura en Sistemas en la UNLP.</li>
         <li><strong>2011</strong>: 💻 Me regalan mi primera notebook (Lenovo G470).</li>
-        <li><strong>2013</strong>: Dejo de comer carne y adopto una dieta basada en plantas. 🥬🍆🥕🍅🥒🥔🥜🫑</li>
+        <li><strong>2013</strong>: Dejo de comer animales y adopto una dieta basada en plantas. 🥬🍆🥕🍅🥒🥔🥜🫑</li>
         <li><strong>2014</strong>: Abandono la carrera universitaria y empiezo empiezo una crisis existencial.</li>
         <li><strong>2015</strong>: Me independizo y trabajo unos meses de ayudante de cocina, luego de mozo y después despachando combustible en una <a href="https://www.shell.com.ar/" target="_blank">Shell</a>.</li>
         <li><strong>2016</strong>: Empiezo a trabajar en la caja de una <a href="https://www.farmaciaojeda.com.ar/" target="_blank">farmacia</a>.</li>
@@ -80,6 +80,7 @@ export default component$(() => {
           <strong>2020</strong>
           :
           <ul>
+            <li>Llega la pandemia y empiezo a trabajar remoto.</li>
             <li>👫 <a href="https://www.instagram.com/dai_lentz/" target="_blank">Daiana</a> y yo empezamos nuestra relación.</li>
             <li>Compro mi notebook Asus Vivobook Ryzen 7 4700u.</li>
           </ul>
@@ -89,7 +90,7 @@ export default component$(() => {
           :
           <ul>
             <li>🏠 Daiana y yo empezamos a convivir juntos. Su 🐶 <a href="https://www.instagram.com/p/BGsbWgXupX8UO2EibELFj8v5Wcjv35BN3xUGJ80/" target="_blank">Tori</a> viene con nosotros.</li>
-            <li>En Arzion empezamos de 0 un nuevo proyecto para gestionar pedidos online llamado <a href="https://www.myshop4.com/" target="_blank">MyShop4</a>.</li>
+            <li>En Arzion empezamos un nuevo proyecto para gestionar pedidos online llamado <a href="https://www.myshop4.com/" target="_blank">MyShop4</a>.</li>
             <li>En Arzion actualizamos un sistema de directorio de empresas globales llamado <a href="https://www.iglobal.co/" target="_blank">iGlobal</a>.</li>
           </ul>
         </li>
