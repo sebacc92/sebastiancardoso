@@ -5,14 +5,12 @@ import Footer from '~/components/footer/footer';
 export default component$(() => {
   return (
     <div class="wrapper">
-      <div class="container">
-        <Header />
-        <main>
-          <section>
-            <Slot />
-          </section>
-        </main>
-      </div>
+      <Header />
+      <main>
+        <section>
+          <Slot />
+        </section>
+      </main>
       <Footer />
     </div>
   );
