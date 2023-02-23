@@ -2,6 +2,21 @@ import { component$, useStylesScoped$ } from '@builder.io/qwik';
 import styles from './header.css?inline';
 import { Link, useLocation } from '@builder.io/qwik-city';
 
+const Nav = ({ location }) => (
+  <nav
+    class="flex items-center justify-center gap-4 overflow-x-auto lg:overflow-visible p-4 text-sm font-medium uppercase"
+  >
+    <Link class={{ active: location.pathname === '/projects/'}} href="/projects">
+      <div class="flex-shrink-0 px-4 py-2 rounded text-gray-900 text-center hover:bg-gray-300 transition duration-500 ease-in-ou">Proyectos</div>
+    </Link>
+    <Link class={{ active: location.pathname === '/articles/'}} href="/articles">
+      <div class="flex-shrink-0 px-4 py-2 rounded text-gray-900 text-center hover:bg-gray-300 transition duration-500 ease-in-ou">Artículos</div>
+    </Link>
+    <Link class={{ active: location.pathname === '/about/'}} href="/about">
+      <div class="flex-shrink-0 px-4 py-2 rounded text-gray-900 text-center hover:bg-gray-300 transition duration-500 ease-in-ou whitespace-nowrap">Acerca de</div>
+    </Link>
+  </nav>
+)
 export default component$(() => {
   useStylesScoped$(styles);
   const location = useLocation()
@@ -18,20 +33,9 @@ export default component$(() => {
           </Link>
         </div>
 
-        <nav
-          aria-label="Site Nav"
-          class="hidden items-center justify-center gap-4 text-sm font-medium lg:flex lg:w-0 lg:flex-1 uppercase"
-        >
-          <Link class={{ active: location.pathname === '/projects/'}} href="/projects">
-            <span class="px-4 rounded text-gray-900 text-center hover:bg-gray-300">Proyectos</span>
-          </Link>
-          <Link class={{ active: location.pathname === '/articles/'}} href="/articles">
-            <span class="px-4 rounded text-gray-900 text-center hover:bg-gray-300">Artículos</span>
-          </Link>
-          <Link class={{ active: location.pathname === '/about/'}} href="/about">
-            <span class="px-4 rounded text-gray-900 text-center hover:bg-gray-300 whitespace-nowrap">Acerca de</span>
-          </Link>
-        </nav>
+        <div class="hidden items-center justify-center gap-4 text-sm font-medium lg:flex lg:w-0 lg:flex-1 uppercase">
+          <Nav location={location} />
+        </div>
 
         <div class="flex w-0 flex-1 justify-end">
           <button class="rounded-full bg-gray-100 p-2 text-gray-500" type="button">
@@ -53,19 +57,7 @@ export default component$(() => {
       </div>
 
       <div class="border-t border-gray-100 lg:hidden">
-        <nav
-          class="flex items-center justify-center gap-4 overflow-x-auto p-4 text-sm font-medium uppercase"
-        >
-          <Link class={{ active: location.pathname === '/projects/'}} href="/projects">
-            <span class="flex-shrink-0 px-4 rounded text-gray-900 text-center hover:bg-gray-300">Proyectos</span>
-          </Link>
-          <Link class={{ active: location.pathname === '/articles/'}} href="/articles">
-            <span class="flex-shrink-0 px-4 rounded text-gray-900 text-center hover:bg-gray-300">Artículos</span>
-          </Link>
-          <Link class={{ active: location.pathname === '/about/'}} href="/about">
-            <span class="flex-shrink-0 px-4 rounded text-gray-900 text-center hover:bg-gray-300 ">Acerca de</span>
-          </Link>
-        </nav>
+        <Nav location={location} />
       </div>
     </header>
   );

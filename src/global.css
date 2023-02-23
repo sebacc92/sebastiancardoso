@@ -67,6 +67,10 @@ main {
   margin-bottom: 20px;
 }
 
+.avatar {
+  cursor: pointer !important;
+}
+
 .container2 .section-1 .avatar img {
   width: 125px;
   border-radius: 50%;
@@ -117,7 +121,7 @@ a {
   text-decoration: none;
 }
 
-a.active span {
+.active {
   color: #000;
   border-bottom: 1px solid #000;
 }
