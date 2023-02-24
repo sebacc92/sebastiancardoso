@@ -10,7 +10,8 @@ export default component$(() => {
   return (
     <footer>
       <div>
-        Made with ❤️ & dev with<Link href="https://qwik.builder.io/"><QwikLogo /></Link>
+        <div>Made with ❤️</div>
+        <div class="flex">Developed with<Link href="https://qwik.builder.io/"><QwikLogo /></Link></div>
       </div>
       <div>
         <button
