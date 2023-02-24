@@ -2,17 +2,21 @@ import { component$, useStylesScoped$ } from '@builder.io/qwik';
 import styles from './header.css?inline';
 import { Link, useLocation } from '@builder.io/qwik-city';
 
-const Nav = ({ location }) => (
+interface LocationProps {
+  pathname: string;
+}
+
+const Nav = (props: { location: LocationProps }) => (
   <nav
     class="flex items-center justify-center gap-4 overflow-x-auto lg:overflow-visible p-4 text-sm font-medium uppercase"
   >
-    <Link class={{ active: location.pathname === '/projects/'}} href="/projects">
+    <Link class={{ active: props.location.pathname === '/projects/'}} href="/projects">
       <div class="flex-shrink-0 px-4 py-2 rounded text-gray-900 text-center hover:bg-gray-300 transition duration-500 ease-in-ou">Proyectos</div>
     </Link>
-    <Link class={{ active: location.pathname === '/articles/'}} href="/articles">
+    <Link class={{ active: props.location.pathname === '/articles/'}} href="/articles">
       <div class="flex-shrink-0 px-4 py-2 rounded text-gray-900 text-center hover:bg-gray-300 transition duration-500 ease-in-ou">Artículos</div>
     </Link>
-    <Link class={{ active: location.pathname === '/about/'}} href="/about">
+    <Link class={{ active: props.location.pathname === '/about/'}} href="/about">
       <div class="flex-shrink-0 px-4 py-2 rounded text-gray-900 text-center hover:bg-gray-300 transition duration-500 ease-in-ou whitespace-nowrap">Acerca de</div>
     </Link>
   </nav>
