@@ -28,7 +28,7 @@ export default component$(() => {
               </button>
             </p>
             <audio ref={audioRef} src="/audio/presentation.mp3"></audio>
-            <p>Nací hace 31 años en Montevideo (Uruguay). Estudié <a href="https://www.info.unlp.edu.ar/licenciatura-en-sistemas-plan-2021/" target="_blank">Licenciatura en Informática en la UNLP</a>. Hace 3 años que trabajo como programador con React en <a href="https://arzion.com/" target="_blank">Arzion</a>.</p>
+            <p>Nací hace 31 años en Montevideo (Uruguay). Estudié <a href="https://www.info.unlp.edu.ar/licenciatura-en-sistemas-plan-2021/" target="_blank" class="text-blue-500 hover:text-blue-700">Licenciatura en Informática en la UNLP</a>. Hace 3 años que trabajo como programador con React en <a href="https://arzion.com/" target="_blank" class="text-blue-500 hover:text-blue-700">Arzion</a>.</p>
             <p>Soy un eterno estudiante porque creo en el aprendizaje permanente. Me encanta el desarrollo Web.</p>
             <p>En mi tiempo libre, me gusta desconectar de la tecnología y conectarme con la naturaleza. Por eso, me dedico a mi pequeña huerta, donde cultivo mis propias verduras y frutas.</p>
           </div>
@@ -52,8 +52,8 @@ export default component$(() => {
         <li>🔸<strong>2011</strong>: 💻 Me regalan mi primera notebook (Lenovo G470).</li>
         <li>🔸<strong>2013</strong>: 🥬 Dejo de comer animales y adopto una dieta basada en plantas.</li>
         <li>🔸<strong>2014</strong>: Abandono la carrera universitaria y empiezo empiezo una crisis existencial.</li>
-        <li>🔸<strong>2015</strong>: Me independizo y trabajo unos meses de ayudante de cocina, luego de mozo y después despachando combustible en una <a href="https://www.shell.com.ar/" target="_blank">Shell</a>.</li>
-        <li>🔸<strong>2016</strong>: Empiezo a trabajar en la caja de una <a href="https://www.farmaciaojeda.com.ar/" target="_blank">farmacia</a>.</li>
+        <li>🔸<strong>2015</strong>: Me independizo y trabajo unos meses de ayudante de cocina, luego de mozo y después despachando combustible en una <a href="https://www.shell.com.ar/" target="_blank" class="text-blue-500 hover:text-blue-700">Shell</a>.</li>
+        <li>🔸<strong>2016</strong>: Empiezo a trabajar en la caja de una <a href="https://www.farmaciaojeda.com.ar/" target="_blank" class="text-blue-500 hover:text-blue-700">farmacia</a>.</li>
         <li>
           🔸<strong>2017</strong>
           :
@@ -67,7 +67,7 @@ export default component$(() => {
           <ul>
             <li>🔹Me inscribo en Platzi y empiezo a estudiar programación de forma autodidacta.</li>
             <li>🔹Aprendo bastante de Javascript(Vue y React), Nodejs y Python.</li>
-            <li>🔹🐈🐈‍⬛ Adopto a <a href="https://www.instagram.com/p/BtLw5MOHutO/" target="_blank">Sol y Pante</a>.</li>
+            <li>🔹🐈🐈‍⬛ Adopto a <a href="https://www.instagram.com/p/BtLw5MOHutO/" target="_blank" class="text-blue-500 hover:text-blue-700">Sol y Pante</a>.</li>
           </ul>
         </li>
         <li>
@@ -75,7 +75,7 @@ export default component$(() => {
           :
           <ul>
             <li>🔹👋 Renuncio a mi trabajo en la farmacia.</li>
-            <li>🔹Comienzo a trabajar presencial en <a href="https://arzion.com/" target="_blank">Arzion</a> como programador React para un sistema de <a href="https://www.anantara.com/es" target="_blank">booking de hoteles</a>.</li>
+            <li>🔹Comienzo a trabajar presencial en <a href="https://arzion.com/" target="_blank" class="text-blue-500 hover:text-blue-700">Arzion</a> como programador React para un sistema de <a href="https://www.anantara.com/es" target="_blank" class="text-blue-500 hover:text-blue-700">booking de hoteles</a>.</li>
           </ul>
         </li>
         <li>
@@ -83,7 +83,7 @@ export default component$(() => {
           :
           <ul>
             <li>🔹Llega la pandemia y empiezo a trabajar remoto.</li>
-            <li>🔹👫 <a href="https://www.instagram.com/dai_lentz/" target="_blank">Daiana</a> y yo empezamos nuestra relación.</li>
+            <li>🔹👫 <a href="https://www.instagram.com/dai_lentz/" target="_blank" class="text-blue-500 hover:text-blue-700">Daiana</a> y yo empezamos nuestra relación.</li>
             <li>🔹Compro mi notebook Asus Vivobook Ryzen 7 4700u.</li>
           </ul>
         </li>
@@ -91,13 +91,13 @@ export default component$(() => {
           🔸<strong>2021</strong>
           :
           <ul>
-            <li>🔹🏠 Daiana y yo empezamos a convivir juntos. Su 🐶 <a href="https://www.instagram.com/p/BGsbWgXupX8UO2EibELFj8v5Wcjv35BN3xUGJ80/" target="_blank">Tori</a> viene con nosotros.</li>
-            <li>🔹En Arzion empezamos un nuevo proyecto para gestionar pedidos online llamado <a href="https://www.myshop4.com/" target="_blank">MyShop4</a>.</li>
-            <li>🔹En Arzion actualizamos un sistema de directorio de empresas globales llamado <a href="https://www.iglobal.co/" target="_blank">iGlobal</a>.</li>
+            <li>🔹🏠 Daiana y yo empezamos a convivir juntos. Su 🐶 <a href="https://www.instagram.com/p/BGsbWgXupX8UO2EibELFj8v5Wcjv35BN3xUGJ80/" target="_blank" class="text-blue-500 hover:text-blue-700">Tori</a> viene con nosotros.</li>
+            <li>🔹En Arzion empezamos un nuevo proyecto para gestionar pedidos online llamado <a href="https://www.myshop4.com/" target="_blank" class="text-blue-500 hover:text-blue-700">MyShop4</a>.</li>
+            <li>🔹En Arzion actualizamos un sistema de directorio de empresas globales llamado <a href="https://www.iglobal.co/" target="_blank" class="text-blue-500 hover:text-blue-700">iGlobal</a>.</li>
           </ul>
         </li>
         <li>🔸<strong>2022</strong>: 👶 Nace Ciro, nuestro hijo.</li>
-        <li>🔸<strong>2023</strong>: Iniciamos un rebranding de MyShop4 y le agregamos unos cuantos features mas. Ahora pasa a llamarse <a href="https://www.morfi.pro" target="_blank">Morfi</a>.</li>
+        <li>🔸<strong>2023</strong>: Iniciamos un rebranding de MyShop4 y le agregamos unos cuantos features mas. Ahora pasa a llamarse <a href="https://www.morfi.pro" target="_blank" class="text-blue-500 hover:text-blue-700">Morfi</a>.</li>
       </ul>
     </div>
   );

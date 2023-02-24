@@ -10,22 +10,30 @@ export default component$(() => {
     {
       title: 'Morfi',
       description: 'Menu digital para restaurantes y casas de comida.',
-      link: 'https://morfi.pro'
+      link: 'https://morfi.pro',
+      github: 'https://reversi-game.sebastiancardoso92.vercel.app/',
     },
     {
       title: 'Reversi Game',
       description: 'El juego de Reversi, también conocido como Otelo.',
-      link: 'https://reversi-game.sebastiancardoso92.vercel.app/'
+      link: 'https://reversi-game.sebastiancardoso92.vercel.app/',
+      github:'https://reversi-game.sebastiancardoso92.vercel.app/',
     }
   ]
   return (
-    <div class="projects-container">
-      {proyects.map(proyect => (
-        <div class="project-card" onClick$={() => window.open(proyect.link, '_blank')}>
-          <h1>{proyect.title}</h1>
-          <p>{proyect.description}</p>
-        </div>
-      ))}
+    <div class="container mx-auto py-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+        {proyects.map(proyect => (
+          <div class="rounded-lg overflow-hidden shadow-lg bg-cover bg-center" style="background-image:url('https://example.com/my-image.jpg');">
+            <div class="p-4 bg-white">
+              <h2 class="text-2xl font-bold mb-2">{proyect.title}</h2>
+              <p class="text-gray-700 text-base">{proyect.description}</p>
+              <a href={proyect.link} class="block mt-2 text-blue-600 hover:underline">Demo</a>
+              <a href={proyect.github} class="block mt-2 text-blue-600 hover:underline">Github</a>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 });

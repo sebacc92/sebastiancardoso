@@ -14,7 +14,7 @@ export default component$(() => {
       </div>
       <div>
         <button
-          class="button-mode-switch"
+          class="button-mode-switch bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
           onClick$={() => {
             document.body.classList.toggle('dark-mode')
             state.darkMode = !state.darkMode
