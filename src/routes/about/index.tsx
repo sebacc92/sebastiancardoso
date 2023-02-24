@@ -51,6 +51,7 @@ export default component$(() => {
         <li>🔸<strong>2009</strong>: 👨‍🎓 Termino la secundaria con orientación a EGEOR (Economía y Gestión de las Organizaciones).</li>
         <li>🔸<strong>2010</strong>: 🏃 Empiezo la carrera de Licenciatura en Sistemas en la UNLP.</li>
         <li>🔸<strong>2011</strong>: 💻 Me regalan mi primera notebook (Lenovo G470).</li>
+        <li>🔸<strong>2012</strong>: 💻 Adios Windows🪟 Hola Linux🐧💚.</li>
         <li>🔸<strong>2013</strong>: 🥬 Dejo de comer animales y adopto una dieta basada en plantas.</li>
         <li>🔸<strong>2014</strong>: Abandono la carrera universitaria y empiezo una crisis existencial.</li>
         <li>🔸<strong>2015</strong>: Me independizo y trabajo unos meses de ayudante de cocina, luego de mozo y después despachando combustible en una <a href="https://www.shell.com.ar/" target="_blank" class="text-blue-500 hover:text-blue-700">Shell</a>.</li>
@@ -100,6 +101,12 @@ export default component$(() => {
         </li>
         <li>🔸<strong>2022</strong>: 👶 Nace Ciro, nuestro hijo.</li>
         <li>🔸<strong>2023</strong>: Iniciamos un rebranding de MyShop4 y le agregamos unos cuantos features mas. Ahora pasa a llamarse <a href="https://www.morfi.pro" target="_blank" class="text-blue-500 hover:text-blue-700">Morfi</a>.</li>
+        <li>🔸
+          <span class="inline-block text-gray-900 text-opacity-50 animate-pulse duration-1000"><strong>Escribiendo mi presente</strong></span>
+          <span class="inline-block text-4xl text-gray-900 text-opacity-50 animate-pulse duration-1000"><strong>. </strong></span>
+          <span class="inline-block text-4xl text-gray-900 text-opacity-50 animate-pulse duration-1000"><strong>. </strong></span>
+          <span class="inline-block text-4xl text-gray-900 text-opacity-50 animate-pulse duration-1000"><strong>. </strong></span>
+        </li>
       </ul>
     </div>
   );

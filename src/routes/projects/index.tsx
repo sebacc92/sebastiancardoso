@@ -11,14 +11,20 @@ export default component$(() => {
       title: 'Morfi',
       description: 'Menu digital para restaurantes y casas de comida.',
       link: 'https://morfi.pro',
-      github: 'https://reversi-game.sebastiancardoso92.vercel.app/',
     },
     {
       title: 'Reversi Game',
       description: 'El juego de Reversi, también conocido como Otelo.',
       link: 'https://reversi-game.sebastiancardoso92.vercel.app/',
-      github:'https://reversi-game.sebastiancardoso92.vercel.app/',
-    }
+      github:'https://github.com/sebaveg/Reversi-Game',
+    },
+    {
+      title: 'Podcast',
+      description: 'Podcasts que consumen la API de AudioBoom',
+      link: 'https://lab.sebastiancardoso92.vercel.app/',
+      github:'https://github.com/sebaveg/next-podcasts-api-audioboom',
+    },
+    
   ]
   return (
     <div class="container mx-auto py-8">
@@ -29,7 +35,7 @@ export default component$(() => {
               <h2 class="text-2xl font-bold mb-2">{proyect.title}</h2>
               <p class="text-gray-700 text-base">{proyect.description}</p>
               <a href={proyect.link} class="block mt-2 text-blue-600 hover:underline">Demo</a>
-              <a href={proyect.github} class="block mt-2 text-blue-600 hover:underline">Github</a>
+              {proyect.github && <a href={proyect.github} class="block mt-2 text-blue-600 hover:underline">Github</a>}
             </div>
           </div>
         ))}
