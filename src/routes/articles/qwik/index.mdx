@@ -1,0 +1,57 @@
+---
+# File: src/routes/articles/qwik/index.mdx
+title: Conociendo Qwik.js
+---
+# Introducción a Qwik
+
+[Qwik.js](https://qwik.builder.io/) es una herramienta de programación de código abierto que permite a los desarrolladores crear aplicaciones web de manera rápida y sencilla.
+
+Fue creada por [Miško Hevery](https://twitter.com/mhevery) (inventor de Angular), [Adam Bradley](https://twitter.com/adamdbradley) y [Manu Almeida](https://twitter.com/manucorporat). Basado en JavaScript, Qwik.js utiliza una arquitectura de componentes para crear aplicaciones escalables y fáciles de mantener.
+
+El objetivo de Qwik.js es reducir la carga y ejecución de JavasScript. Este framework entrega el JavaScript solo cuando el usuario lo necesita. Qwik logra esto a través de dos estrategias principales:
+1. Retrasar la ejecución y descarga de JavaScript tanto como sea posible.
+2. Serializar el estado de ejecución de la aplicación y el framework en el servidor y reanudarlo en el cliente.
+
+Qwik.js es una excelente opción para aquellos que buscan una forma fácil de crear aplicaciones web de alta calidad.
+
+## Nuevo enfoque para Optimización del rendimiento
+### Cero carga
+A diferencia de otros frameworks como React o Vue, Qwik no hace hidratación porque es reanudable. La hidratación puede tardar varios segundos, dependiendo de la complejidad de tu aplicación y de la velocidad del dispositivo móvil. Las aplicaciones Qwik son instantáneamente interactivas incluso en dispositivos móviles lentos, lo que lleva a una puntuación perfecta de Google PageSpeed.
+### Reanudable
+Las aplicaciones Qwik comienzan su vida como SSR/SSG (Server Side Rendering/Static Site Generation). Qwik serializa el estado de la aplicación y el estado del framework en HTML al renderizar la aplicación. Entonces Qwik puede reanudar la ejecución donde el servidor lo dejó en el navegador porque todos los datos que Qwik necesita están en HTML. Ningún JS necesita ser descargado o ejecutado hasta que sea necesario para manejar la interacción del usuario o el renderizado.
+### JavaScript Streaming & Lazy Execution
+Qwik presenta el concepto de "JavaScript Streaming", donde la página se carga instantáneamente y los fragmentos de JavaScript requeridos se obtienen previamente en un hilo separado, similar al "buffering" en la transmisión de video. El código precargado solo se ejecuta con la acción del usuario, y ese proceso se llama "Lazy Execution" (Ejecución diferida). Este aumento de rendimiento no requiere esfuerzo manual ni toma de decisiones por parte del desarrollador, ya que esta característica está integrada en Qwik de fábrica.
+### Renderización reducida  
+Tras la interacción del usuario, Qwik es quirúrgico sobre qué componentes renderiza. Esto se hace a través de la reactividad y permite a Qwik minimizar la cantidad de código de renderizado descargado y ejecutado. El gráfico de reactividad se construye en el servidor y se restaura en el cliente sin necesidad de que el código de la aplicación esté presente y se vuelva a ejecutar.
+### Escalabilidad
+La cantidad de código que se descarga en el cliente es proporcional a la complejidad de la interacción con el usuario, no al tamaño de todos los componentes de la ruta actual. Su sitio mantiene su rendimiento incluso cuando la complejidad de la aplicación crece con el tiempo.
+### Código único
+Qwik tiene un único modelo mental consistente tanto para el código del servidor como para el del cliente. El mismo componente puede comenzar su ciclo de vida en el servidor y procesar eventos de usuario en el cliente. Configurar escuchadores DOM en el render del servidor, hacer que estén listos en su interacción con el cliente.
+
+## Adiós hidratación, Hola reanudación
+Qwik no usa hidratación, sino que usa algo llamado "Resumability" (reaundación). Esta es la característica mas importante de este framework y que lo diferencia de otros como lo son: React, Vue, Angular o Svelte.
+
+La hidratación es una técnica en la que JavaScript del lado del cliente convierte una página web HTML estática, entregada mediante alojamiento estático o renderización del lado del servidor, en una página web dinámica adjuntando manejadores de eventos a los elementos HTML.
+
+El proceso de hidratación lo podemos divir en varios pasos. Todo comienza cuando un usuario hace una petición de una aplicación. Este proceso consiste en:
+1. Descargar todo el HTML
+2. Descargar todo el JavaScript
+3. Analizar y ejecutar todo el JavaScript.
+4. Adjuntar el codigo JavaScript a cada listener.
+
+![Alt text](/images/introduccion_a_qwik_imagen_1.webp)
+
+Con la reanudación solo descargamos el HTML y listo. Solo una interacción del usuario obliga al cliente a descargar código para manejar esa interacción específica. El cliente no está duplicando ningún trabajo del servidor; por lo tanto, no hay gastos generales.
+
+La reanudabilidad se trata de pausar la ejecución en el servidor y reanudar la ejecución en el cliente sin tener que reproducir y descargar toda la lógica de la aplicación.
+
+## Que problemas soluciona Qwik?
+Los sitios web modernos requieren grandes cantidades de JavaScript para volverse interactivos. Demasiado JavaScript se manifiesta en dos problemas:
+1. **Ancho de banda de la red**: se envía una gran cantidad de código al cliente, lo que puede llevar mucho tiempo en redes lentas.
+2. **Tiempo de inicio**: una vez en el cliente, el código debe ejecutarse (como parte de la hidratación) para que el sitio sea interactivo.
+
+La solución al problema anterior es obvia y difícil: enviar menos JavaScript
+
+Qwik no se trata de crear menos JavaScript. Qwik se trata de no tener que enviar todo ese JavaScript al cliente a la vez al iniciar la aplicación. Qwik es lo que obtienes cuando llevas al extremo la idea de "retrasar la carga de JavaScript". Está diseñado desde cero para producir muchos lazy loadings.
+
+Qwik requiere una forma diferente de pensar y diseñar su aplicación, pero el resultado es un JavaScript inicial cercano a cero con una descarga progresiva de JavaScript basada en las interacciones del usuario.

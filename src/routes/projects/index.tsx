@@ -28,7 +28,7 @@ export default component$(() => {
   ]
   return (
     <div class="container mx-auto py-8">
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {proyects.map(proyect => (
           <div class="rounded-lg overflow-hidden shadow-lg bg-cover bg-center" style="background-image:url('https://example.com/my-image.jpg');">
             <div class="p-4 bg-white">

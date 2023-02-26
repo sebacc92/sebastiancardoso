@@ -10,6 +10,9 @@ export default component$(() => {
       {/* <h2>Aprende. Crea. Comparte!</h2> */}
         <h1 class="text-3xl font-bold">Sobre mí</h1>
       <div class="about-me-content">
+        <figure class="rounded-md">
+          <img src="/images/yo3.webp" alt="Foto de Seba" class="photo border-8 border-grey-500/50" />
+        </figure>
         <div class="">
           <div class="about-me-text mr-4">
             <p>
@@ -28,14 +31,9 @@ export default component$(() => {
               </button>
             </p>
             <audio ref={audioRef} src="/audio/presentation.mp3"></audio>
-            <p>Nací hace 31 años en Montevideo (Uruguay). Estudié <a href="https://www.info.unlp.edu.ar/licenciatura-en-sistemas-plan-2021/" target="_blank" class="text-blue-500 hover:text-blue-700">Licenciatura en Informática en la UNLP</a>. Hace 3 años que trabajo como programador con React en <a href="https://arzion.com/" target="_blank" class="text-blue-500 hover:text-blue-700">Arzion</a>.</p>
-            <p>Soy un eterno estudiante porque creo en el aprendizaje permanente. Me encanta el desarrollo Web.</p>
-            <p>En mi tiempo libre, me gusta desconectar de la tecnología y conectarme con la naturaleza. Por eso, me dedico a mi pequeña huerta, donde cultivo mis propias verduras y frutas.</p>
+            <p>Soy un eterno estudiante porque creo en el aprendizaje permanente y me gusta el desarrollo Web.</p>
           </div>
         </div>
-        <figure class="rounded-md">
-          <img src="/images/yo3.webp" alt="Foto de Seba" class="photo border-8 border-grey-500/50" />
-        </figure>
       </div>
       <h2 class="text-2xl">🕐 Timeline de mi vida</h2>
       <ul class="list-timeline">
@@ -47,6 +45,7 @@ export default component$(() => {
         <li>🔸<strong>2004</strong>: 💿 Mi amigo del barrio tiene Internet ADSL y grabadora de CDs. Aprendo a descargar música mp3 del Ares y a grabar CDs vírgenes.</li>
         <li>🔸<strong>2005</strong>: 🖨️ Me regalan mi primer impresora y la uso para imprimir fotos y tapas de los CDs con canciones.</li>
         <li>🔸<strong>2006</strong>: 👨‍🎓 Termino la primaria. En aquel tiempo 9° grado.</li>
+        <li>🔸<strong>2007</strong>: 🗺️ Mudanza de Ituzaingo a Brandsen.</li>
         <li>🔸<strong>2008</strong>: 👨‍💼 Hago un curso de operador Office en IAC</li>
         <li>🔸<strong>2009</strong>: 👨‍🎓 Termino la secundaria con orientación a EGEOR (Economía y Gestión de las Organizaciones).</li>
         <li>🔸<strong>2010</strong>: 🏃 Empiezo la carrera de Licenciatura en Sistemas en la UNLP.</li>

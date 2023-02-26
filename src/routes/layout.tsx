@@ -8,7 +8,9 @@ export default component$(() => {
       <Header />
       <main class="flex-grow p-4">
         <section>
-          <Slot />
+          <div class="mdx-body">
+            <Slot />
+          </div>
         </section>
       </main>
       <Footer />
