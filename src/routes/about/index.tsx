@@ -31,7 +31,7 @@ export default component$(() => {
               </button>
             </p>
             <audio ref={audioRef} src="/audio/presentation.mp3"></audio>
-            <p>Soy un eterno estudiante porque creo en el aprendizaje permanente y me gusta el desarrollo Web.</p>
+            <p>Soy desarrollador front-end con mas de 3 años de experiencia en aplicaciones que usan React.</p>
           </div>
         </div>
       </div>

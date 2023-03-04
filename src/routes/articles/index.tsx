@@ -5,7 +5,7 @@ export default component$(() => {
     const nav = useNavigate();
     const articles = [
         {
-            title: 'Qwik.js',
+            title: 'La librería de React que mejora la resumabilidad',
             date: '15/02/2023',
             link: 'qwik'
         },
